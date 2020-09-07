@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Less common symptoms</title>
+    <link href="{{ url_for('static', filename='styles/index.css') }}" rel="stylesheet">
+
+  </head>
+  <body style="height: 80%; min-height: 80%">
+    <nav class="navbar navbar-expand-lg bg-white main-nav">
+      <a class="navbar-brand p-0" href="/">
+    
+        <img src="{{url_for('static', filename='Logo.svg')}}"/>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <button class="contact-btn">Contact us</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="text-center common-sym-row">
+        <p class="headline mb-1">Less Common Symptoms</p>
+        <p class="age-question">Are you suffering with any of these?</p>
+      </div>
+
+      <form action="/covid.India.ai/Serious_sym" method="POST" style="margin-top: 31px">
+       <div class="row">
+           <!-- <div class="col-md-1"></div> -->
+           <div class="col-md-12">
+          <div class="row">
+              <div class="col-md-3 pr-0">
+            <div class="form-check">
+              <input
+                class="form-check-input less-check"
+                type="checkbox"
+                id="inlineCheckbox1"
+                value="None"
+                name="Symptom1"
+              
+              />
+              <label class="form-check-label" for="inlineCheckbox1">None</label>
+            </div>
+            <div class="form-check mt-2">
+                <input
+                  class="form-check-input less-check"
+                  type="checkbox"
+                  id="inlineCheckbox5"
+                  value="Conjuctivities"
+                  name="Symptom5"
+                 
+                />
+                <label class="form-check-label" for="inlineCheckbox5"
+                  >Conjuctivities</label
+                >
+              </div>
+        </div>
+
+          <div class="col-md-3 p-0">
+            <div
+              class="form-check"
+           
+            >
+              <input
+                class="form-check-input less-check"
+                type="checkbox"
+                id="inlineCheckbox2"
+                value="Aches & Pain"
+                name="Symptom2"
+              />
+              <label class="form-check-label" for="inlineCheckbox2"
+                >Aches & Pain</label
+              >
+            </div>
+            <div class="form-check mt-2" >
+                <input
+                  class="form-check-input less-check"
+                  type="checkbox"
+                  id="inlineCheckbox6"
+                  value="Headache"
+                  name="Symptom6"
+                />
+                <label class="form-check-label" for="inlineCheckbox6"
+                  >Headache</label
+                >
+              </div>
+        </div>
+       
+           <div class="col-md-3 p-0">
+            <div class="form-check">
+              <input
+                class="form-check-input less-check"
+                type="checkbox"
+                id="inlineCheckbox3"
+                value="Sore Throat"
+                name="Symptom3"
+              />
+              <label class="form-check-label" for="inlineCheckbox3"
+                >Sore Throat</label
+              >
+            </div>
+            
+            <div class="form-check mt-2" >
+                <input
+                  class="form-check-input less-check"
+                  type="checkbox"
+                  id="inlineCheckbox7"
+                  value="Loss of taste or smell"
+                  name="Symptom7"
+                />
+                <label class="form-check-label" for="inlineCheckbox7"
+                  >Loss of taste or smell</label
+                >
+              </div>
+        </div>
+        <div class="col-md-3 p-0">
+            <div
+              class="form-check"
+           
+            >
+              <input
+                class="form-check-input less-check"
+                type="checkbox"
+                id="inlineCheckbox4"
+                value="Diarrhoea"
+                name="Symptom4"
+              />
+              <label class="form-check-label" for="inlineCheckbox4"
+                >Diarrhoea</label
+              >
+            </div>
+            <div class="form-check mt-2">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="inlineCheckbox8"
+                  value="A rash on skin, or discolouration of fingers or toes"
+                  name="Symptom8"
+                />
+                <label class="form-check-label" for="inlineCheckbox8"
+                  >A rash on skin, or discolouration of fingers or toes</label
+                >
+              </div>
+        </div>
+          </div>
+          
+
+    
+        <div class="text-center">
+          <button type="submit" class="gender-btn">Next</button>
+        </div>
+    </div>
+    </div>
+      </form>
+    </div>
+    <div class="px-4 img-section">
+      <div class="img-wrapper"></div>
+    </div>
+    <div class="text-center py-4">
+      <p class="copyright-text mb-0">
+        Copyright @ 2020 All Rights Reserved | Soulpageitsolutions
+      </p>
+    </div>
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

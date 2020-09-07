@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Symptoms checker</title>
+    <link href="{{ url_for('static', filename='styles/index.css') }}" rel="stylesheet"> 
+    </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white main-nav">
+      <a class="navbar-brand p-0" href="/">
+        <img src="{{url_for('static', filename='Logo.svg')}}"/>
+        
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <button class="contact-btn">Contact us</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="text-center content-row">
+        <p class="headline mb-1">COVID 19 Symptom Checker</p>
+        <p class="request">
+          Please answer to the questions to the best of your knowledge.
+        </p>
+        <p class="age-question">What is your Age?</p>
+        <form method="POST" action="/covid.India.ai/Gender">
+          <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+              <div class="input-wrapper">
+                <div class="input-group mb-3 ml-5" style="width : 82%;">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter your age"
+                    name="Age"
+                  />
+                  
+                  <div class="input-group-append">
+                    <button type="submit" class="next-btn">Next</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4"></div>
+        </form>
+      </div>
+    </div>
+    <div class="px-4 img-section">
+      <div class="img-wrapper" style="background:url(/static/Background.svg);"></div>
+    </div>
+    <div class="text-center py-2">
+        <p class="copyright-text">Copyright @ 2020 All Rights Reserved | Soulpageitsolutions</p>
+
+    </div>
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

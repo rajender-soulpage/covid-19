@@ -1,0 +1,118 @@
+body {
+  background: #f5f5f5 !important;
+}
+
+.main-nav {
+  height: 80px !important;
+  padding: 0.5rem 95px 0.5rem 60px !important;
+}
+.contact-btn {
+  border: 1px solid #ea844d;
+  border-radius: 4px;
+  font-family: Roboto;
+  font-size: 14px;
+  color: #ea844d;
+  background: #ffff;
+  padding: 5px 15px;
+}
+.content-row {
+  margin-top: 111px;
+}
+.headline {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  color: #393838;
+}
+.input-wrapper {
+  width: 311px;
+}
+.request {
+  font-size: 18px;
+
+  color: #393838;
+}
+.age-question {
+  font-size: 24px;
+
+  color: #393838;
+}
+.next-btn {
+  border: none;
+  background-color: #ea844d;
+  color: #ffff;
+  font-size: 14px;
+  padding: 0px 20px;
+}
+.img-wrapper {
+  margin-top: 49px;
+
+  height: 130px;
+  background: url("background.svg") no-repeat center center;
+  background-size: cover;
+}
+.copyright-text {
+  font-size: 12px;
+  line-height: 18px;
+
+  color: #35384d;
+}
+.img-section {
+  border-bottom: 0.6px solid #393838;
+}
+.gender-btn {
+  border: none;
+  background-color: #ea844d;
+  color: #ffff;
+  font-size: 14px;
+  padding: 5px 20px;
+  margin-top: 22px;
+  border-radius: 3px;
+}
+.common-sym-row {
+  margin-top: 64px;
+}
+.form-check-label {
+  font-size: 18px !important;
+  line-height: 30px !important;
+
+  color: #393838 !important;
+}
+.check-wrapper {
+  padding-left: 20px;
+}
+.less-check {
+  position: relative !important;
+}
+.result {
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #393838;
+}
+.result-row{
+    margin-top:200px;
+}
+.gender-row{
+    margin-top: 130px;
+}
+.common-row{
+    margin-top : 100px;
+}
+
+
+/* Tab */
+@media (min-width : 768px) and (max-width : 991px){
+    .form-check-label{
+        font-size: 15px !important;
+    }
+
+}
+
+@media (min-width : 576px) and (max-width : 767px){
+    
+}
+
+@media (max-width : 575px){
+    
+}
