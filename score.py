@@ -40,7 +40,7 @@ def get_score():
             for type_question_index in range(0,len(answer_score_variables)):
                 if(answer in answer_score_variables[type_question_index].keys()):
                     lis.append(answer_score_variables[type_question_index][answer]*importance_question_variable[type_question_index])
-    
+    print(user_input[0],"______________-")
     #giving the age value by range.
     if(int(user_input[0])> 0 and int(user_input[0]) <= 17):
         age_value = 0.10
