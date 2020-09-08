@@ -20,7 +20,7 @@ pre_existing_health_answer_imp = 0.70
 answer_score_variables = [gender_sy_answer,common_sy_answer,less_common_sym_answer,Serious_sym_answer,pre_existing_health_answer]
 importance_question_variable = [gender_sy_answer_imp,common_sy_answer_imp,less_common_sym_answer_imp,Serious_sym_answer_imp,pre_existing_health_answer_imp]
 
-# user given input
+# user given input values
 user_input = []
 def get_score():
     lis = []
