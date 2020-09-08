@@ -1,3 +1,4 @@
+import random
 #different answer importants score dict.
 gender_sy_answer = {"Male":0.60,"Female":0.30,"Others":0.10}
 
@@ -10,17 +11,17 @@ Serious_sym_answer = {"None":0,"Difficulty breathing or shortness of breath": 0.
 pre_existing_health_answer = {"None":0,"Hypertension": 0.20,"High blood pressure":0.30,"Diabetes":0.05,"Lung disease": 0.30,"Dementia": 0.02,"Heart attacks": 0.30,"Other heart disease": 0.30,"Active cancer": 0.50,"Chronic kidney disease": 0.08} 
 
 #importance score of each type of question
-age_factor_answer = 0.30 
-gender_sy_answer_imp = 0.2
-common_sy_answer_imp = 0.20
-less_common_sym_answer_imp = 0.20
-Serious_sym_answer_imp = 0.98
-pre_existing_health_answer_imp = 0.70
+age_factor_answer = 0.20
+gender_sy_answer_imp = 0.02
+common_sy_answer_imp = 0.10
+less_common_sym_answer_imp = 0.50
+Serious_sym_answer_imp = 0.90
+pre_existing_health_answer_imp = 0.75
 
 answer_score_variables = [gender_sy_answer,common_sy_answer,less_common_sym_answer,Serious_sym_answer,pre_existing_health_answer]
 importance_question_variable = [gender_sy_answer_imp,common_sy_answer_imp,less_common_sym_answer_imp,Serious_sym_answer_imp,pre_existing_health_answer_imp]
 
-# user given input values
+# user given input
 user_input = []
 def get_score():
     lis = []
@@ -54,4 +55,7 @@ def get_score():
     else:
         pass
     lis.append(age_value*age_factor_answer)
-    return round(sum(lis)*100)
+    if(round(sum(lis)*100) >= 100):
+        return random.sample(range(90, 99), 1)[0]
+    else:
+        return round(sum(lis)*100)
