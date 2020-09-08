@@ -34,7 +34,10 @@ def Page2():
         if(len(user_input)==0):
             user_input.append(res1)
         else:
-            user_input[0] = res1
+            try:
+                user_input[0] = res1
+            except:
+                user_input.append(res1)
     return render_template('gender.html')
 
 #page4
@@ -50,7 +53,10 @@ def Page4():
         if(len(user_input)==1):
             user_input.append(res1)
         else:
-            user_input[1] = res1
+            try:
+                user_input[1] = res1
+            except:
+                user_input.append(res1)
     return render_template('common_sym.html')
 
 
@@ -68,7 +74,10 @@ def Page5():
         if(len(user_input)==2):
             user_input.append(res1)
         else:
-            user_input[2] = res1
+            try:
+                user_input[2] = res1
+            except:
+                user_input.append(res1)
     return render_template("less_common_sym.html")
 
 #page6
@@ -85,7 +94,10 @@ def Page6():
         if(len(user_input)==3):
             user_input.append(res1)
         else:
-            user_input[3] = res1
+            try:
+                user_input[3] = res1
+            except:
+                user_input.append(res1)
     return render_template("Serious_symptoms.html")
 
 #page8
@@ -102,7 +114,10 @@ def Page8():
         if(len(user_input)==4):
             user_input.append(res1)
         else:
-            user_input[4] = res1
+            try:
+                user_input[4] = res1
+            except:
+                user_input.append(res1)
     return render_template("pre_existing_health.html")
 
 #page8
@@ -119,7 +134,10 @@ def Page10():
         if(len(user_input)==5):
             user_input.append(res1)
         else:
-            user_input[5] = res1
+            try:
+                user_input[5] = res1
+            except:
+                user_input.append(res1)
     return render_template("pre_existing_health2.html")
 
 #page9
@@ -136,7 +154,10 @@ def page9():
         if(len(user_input)==6):
             user_input.append(res1)
         else:
-            user_input[6] = res1
+            try:
+                user_input[6] = res1
+            except:
+                user_input.append(res1)
         score=get_score()
         print("\n the final sore :- ",score)
     return render_template("Result.html",value = score)
