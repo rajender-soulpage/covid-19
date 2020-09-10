@@ -3,7 +3,10 @@
   <head>
     <title>Pre health condition</title>
     <link href="{{ url_for('static', filename='styles/index.css') }}" rel="stylesheet">
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-white main-nav">
@@ -19,7 +22,10 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon">
+          
+        <i class="fa fa-align-justify"></i>
+        </span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -37,8 +43,8 @@
       </div>
       <form action="/covid.India.ai/Result" method="POST">
         <div class="row">
-          <div class="col-md-3"></div>
-          <div class="col-md-3">
+          <div class="col-lg-3 d-none d-lg-block"></div>
+          <div class="col-lg-3 col-md-4 col-sm-3 col-3 p-0">
             <div class="form-check">
               <input
                 class="form-check-input less-check"
@@ -62,7 +68,7 @@
               >
             </div>
           </div>
-          <div class="col-md-3 pl-0">
+          <div class="col-lg-3 col-md-4 col-5 col-sm-5 pl-0">
             <div class="form-check">
               <input
                 class="form-check-input less-check"
@@ -88,7 +94,7 @@
               >
             </div>
           </div>
-          <div class="col-md-3 pl-0">
+          <div class="col-lg-3 col-md-4 col-4 col-sm-4 p-0">
             <div class="form-check">
               <input
                 class="form-check-input less-check"
@@ -109,7 +115,7 @@
       </form>
     </div>
     <div class="px-4 img-section">
-      <div class="img-wrapper" style="background:url(/static/Background.svg);"></div>
+      <div class="img-wrapper"></div>
     </div>
     <div class="text-center py-4">
       <p class="copyright-text mb-0">

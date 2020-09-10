@@ -3,7 +3,10 @@
   <head>
     <title>Less common symptoms</title>
     <link href="{{ url_for('static', filename='styles/index.css') }}" rel="stylesheet">
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body style="height: 80%; min-height: 80%">
     <nav class="navbar navbar-expand-lg bg-white main-nav">
@@ -20,7 +23,9 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon">
+          <i class="fa fa-align-justify"></i>
+        </span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -40,9 +45,9 @@
       <form action="/covid.India.ai/Serious_sym" method="POST" style="margin-top: 31px">
        <div class="row">
            <!-- <div class="col-md-1"></div> -->
-           <div class="col-md-12">
+           <div class="col-12">
           <div class="row">
-              <div class="col-md-3 pr-0">
+              <div class="col-md-3 col-6 col-sm-6 pr-md-0">
             <div class="form-check">
               <input
                 class="form-check-input less-check"
@@ -50,6 +55,7 @@
                 id="inlineCheckbox1"
                 value="None"
                 name="Symptom1"
+
               
               />
               <label class="form-check-label" for="inlineCheckbox1">None</label>
@@ -69,7 +75,7 @@
               </div>
         </div>
 
-          <div class="col-md-3 p-0">
+          <div class="col-md-3 col-6 col-sm-6 p-md-0">
             <div
               class="form-check"
            
@@ -92,6 +98,7 @@
                   id="inlineCheckbox6"
                   value="Headache"
                   name="Symptom6"
+
                 />
                 <label class="form-check-label" for="inlineCheckbox6"
                   >Headache</label
@@ -99,7 +106,7 @@
               </div>
         </div>
        
-           <div class="col-md-3 p-0">
+           <div class="col-md-3 col-6 col-sm-6 p-md-0 mt-2 mt-md-0">
             <div class="form-check">
               <input
                 class="form-check-input less-check"
@@ -126,7 +133,7 @@
                 >
               </div>
         </div>
-        <div class="col-md-3 p-0">
+        <div class="col-md-3 col-6 col-sm-6 p-md-0 mt-2 mt-md-0">
             <div
               class="form-check"
            
@@ -167,7 +174,7 @@
       </form>
     </div>
     <div class="px-4 img-section">
-      <div class="img-wrapper" style="background:url(/static/Background.svg);"></div>
+      <div class="img-wrapper" ></div>
     </div>
     <div class="text-center py-4">
       <p class="copyright-text mb-0">
