@@ -3,6 +3,10 @@
   <head>
     <title>Result</title>
     <link href="{{ url_for('static', filename='styles/index.css') }}" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
   </head>
   <body>
@@ -19,7 +23,9 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon">
+          <i class="fa fa-align-justify"></i>
+        </span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -34,19 +40,28 @@
       <div class="text-center result-row">
         <p class="headline mb-1">COVID 19 Prediction</p>
         <p class="result">
-            There is <span style="color : #FA7167;">{{value}}% </span>chance to be infected by <span style="color : #FA7167;">COVID 19</span> 
+          There is <span style="color : #FA7167;">{{value}}% </span>chance to be infected by <span style="color : #FA7167;">COVID 19</span>
         </p>
-        
+      
        
       </div>
     </div>
     <div class="px-4 img-section">
       <div class="img-wrapper" style="background:url(/static/Background.svg);"></div>
     </div>
-    <div class="text-center py-4">
+    <!-- <div class="text-center py-4">
         <p class="copyright-text mb-0">Copyright @ 2020 All Rights Reserved | Soulpageitsolutions</p>
 
-    </div>
+    </div> -->
+
+    <!-- new change -->
+    <footer class="common-footer">
+     
+      <p class="copyright-text mb-0">
+        Copyright @ 2020 All Rights Reserved | Soulpageitsolutions
+      </p>
+   
+    </footer>
 
     <!-- Latest compiled and minified CSS -->
     <link

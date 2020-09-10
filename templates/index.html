@@ -3,12 +3,15 @@
   <head>
     <title>Symptoms checker</title>
     <link href="{{ url_for('static', filename='styles/index.css') }}" rel="stylesheet"> 
-    </head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-white main-nav">
       <a class="navbar-brand p-0" href="/">
         <img src="{{url_for('static', filename='Logo.svg')}}"/>
-        
       </a>
       <button
         class="navbar-toggler"
@@ -19,7 +22,9 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon">
+          <i class="fa fa-align-justify"></i>
+        </span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -39,17 +44,16 @@
         <p class="age-question">What is your Age?</p>
         <form method="POST" action="/covid.India.ai/Gender">
           <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-3 d-none d-sm-block"></div>
+            <div class="col-md-4 col-sm-6 col-12 p-md-0">
               <div class="input-wrapper">
-                <div class="input-group mb-3 ml-5" style="width : 82%;">
+                <div class="input-group mb-3 ml-lg-5 age-input" style="width: 82%">
                   <input
                     type="text"
                     class="form-control"
                     placeholder="Enter your age"
                     name="Age"
                   />
-                  
                   <div class="input-group-append">
                     <button type="submit" class="next-btn">Next</button>
                   </div>
@@ -57,17 +61,22 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4"></div>
+          <div class="col-md-4 col-sm-3 d-none d-sm-block"></div>
         </form>
       </div>
     </div>
     <div class="px-4 img-section">
       <div class="img-wrapper" style="background:url(/static/Background.svg);"></div>
     </div>
-    <div class="text-center py-2">
-        <p class="copyright-text">Copyright @ 2020 All Rights Reserved | Soulpageitsolutions</p>
 
-    </div>
+    <!-- new change  -->
+    <footer class="index-footer">
+     
+      <p class="copyright-text mb-0">
+        Copyright @ 2020 All Rights Reserved | Soulpageitsolutions
+      </p>
+   
+    </footer>
 
     <!-- Latest compiled and minified CSS -->
     <link

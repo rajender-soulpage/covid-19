@@ -48,7 +48,8 @@ body {
   margin-top: 49px;
 
   height: 130px;
-  background: url("background.svg") no-repeat center center;
+ 
+  background: url("Background.svg") no-repeat center center;
   background-size: cover;
 }
 .copyright-text {
@@ -58,7 +59,8 @@ body {
   color: #35384d;
 }
 .img-section {
-  border-bottom: 0.6px solid #393838;
+  border-bottom: 0.5px solid #393838;
+  
 }
 .gender-btn {
   border: none;
@@ -99,6 +101,18 @@ body {
 .common-row{
     margin-top : 100px;
 }
+.navbar-toggler {
+  border : 2px solid #393838 !important;
+  padding :  5px 10px 1px 10px !important;
+}
+.index-footer{
+  text-align: center;
+  padding : 10px;
+}
+.common-footer{
+  text-align: center;
+  padding : 25px;
+}
 
 
 /* Tab */
@@ -106,13 +120,75 @@ body {
     .form-check-label{
         font-size: 15px !important;
     }
+    .img-wrapper{
+      height : 70px;
+    }
+    .main-nav {
+      height: 100% !important;
+      /* padding: 0.5rem 22px 0.5rem 22px !important; */
+  }
+  .navbar-nav{
+    margin-top: 10px !important;
+  }
 
 }
 
 @media (min-width : 576px) and (max-width : 767px){
-    
+  .img-wrapper{
+    height : 50px;
+  }
+  .headline {
+    font-size: 20px;
+  }
+  .request{
+    font-size: 16px;
+  }
+  .age-question {
+    font-size: 20px;
+  }
+  .main-nav {
+    height: 100% !important;
+    padding: 0.5rem 22px 0.5rem 22px !important;
+}
+.navbar-nav{
+  margin-top: 10px !important;
+}
+.form-check-label{
+  font-size : 16px !important;
+}
+.result {
+  font-size : 20px;
+}
 }
 
 @media (max-width : 575px){
+  .main-nav {
+    height: 100% !important;
+    padding: 0.5rem 22px 0.5rem 22px !important;
+}
+.navbar-nav{
+  margin-top: 10px !important;
+}
+.headline {
+  font-size: 18px;
+}
+.request{
+  font-size: 15px;
+}
+.age-question {
+  font-size: 18px;
+}
+.age-input{
+  margin-left: 105px;
+}
+.img-wrapper{
+  height: 45px;
+}
+.form-check-label{
+  font-size : 16px !important;
+}
+.result {
+  font-size : 20px;
+}
     
 }
